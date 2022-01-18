@@ -1,0 +1,26 @@
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5>SMS</h5>
+                        <label for="hasSMS">
+                            <input type="checkbox" id="hasSMS" name="hasSMS" form="<?php echo $form['name']?>" checked>
+                            Include SMS
+                        </label>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <?php
+                                $form['input']['rows'] = 3;
+                            ?>
+                            <label for="#">Message</label>
+                            <?php Form::textarea('sms[message]' , '' , $form['input']);?>
+                            <?php unset($form['input']['rows'])?>
+                        </div>
+                        <div class="form-group">
+                            <?php $form['input']['readonly'] = '';?>
+                            <label for="#">Signature</label>
+                            <?php Form::text('sms[signature]' , $smsSetting->signature , $form['input']);?>
+                        </div>
+                        <a href="#">Choose content on pre-built sms</a>
+                    </div>
+                </div>

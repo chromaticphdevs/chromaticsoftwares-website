@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap');
+
+/*CONTSTANTS*/
+
+:root{
+  --gutter-100: 250px;
+  --primary : #C82121;
+  --primary-dark:#9E1D1E;
+  --gutter-content: 25%;
+}
+
+.content-spacing{
+  padding: 50px;
+}
+
+.page-divider {
+  height: 250px;
+}
+.divider {
+  height: 50px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+  line-height: 160%;
+}
+
+.main-gutter
+{
+  padding: 0px var(--gutter-100);
+}
+
+/*MAIN PAGE-DESIGN*/
+.brand {
+  text-align: left;
+}
+.brand img {
+  width: 300px;
+}
+
+/*CONTENT HOLDERS*/
+
+.box-mode-1 {
+  background: #E7E7E7;
+}
+.box-content-mode-1
+{
+  background: #fff;
+  padding: 80px 100px;
+}
+.text-wrap{
+  word-wrap: wrap;
+}
+
+.box-item .header
+{
+  font-weight: bold;
+}
+.box-item p
+{
+  font-weight: light;
+}
+
+nav#main_navigation
+{
+  background: #fff;
+  height: 75px;
+  line-height: 75px;
+}
+nav#main_navigation #links
+{
+  margin:0px;
+  padding: 0px;
+  text-align: right;
+}
+
+nav#main_navigation #links li
+{
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+nav#main_navigation #links li:last-child
+{
+  margin-right: 0px;
+}
+
+nav#main_navigation #links li a {
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+nav#main_navigation #links li a:hover
+{
+  color: var(--primary);
+}
+
+/*BANNER*/
+
+#banner {
+  height: 502px;
+  background: url('http://dev.chromaticsoftwares/assets/landing_background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+#banner .head-line {
+  color: #fff;
+  padding-top: 200px;
+}
+
+#banner .head-line h3{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.call-to-action a , a:hover {
+  color: #fff;
+}
+.call-to-action{
+  background: var(--primary);
+  line-height: 100%;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 12px;
+  height: 40px;
+}
+
+.call-to-action:hover{
+  background: var(--primary-dark);
+}
+
+/*BENEFITS*/
+.benefit h5{
+  font-weight: bold;
+}
+
+/*ICON*/
+
+div.icon {
+  width: 250px;
+  min-height: 150px;
+  background: #fff;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+}
+
+div.icon img
+{
+
+  width: 100%;
+}
+
+
+/*CUSTOMERS*/
+
+div.customers img
+{
+  width: 150px;
+}
+
+#services {
+  background: rgb(2,0,36);
+  background: linear-gradient(176deg, rgba(2,0,36,0.9976365546218487) 0%,
+  rgba(16,55,92,1) 41%, rgba(14,111,105,0.938813025210084) 100%);
+}
+#services h3
+{
+  color: #fff;
+}
+div.services img {
+  width: 100%;
+  display: block;
+  margin:0px auto;
+}
+
+.industry a:hover{
+  color: var(--primary);
+}
+
+.hero-section
+{
+  /* background: red; */
+  background: rgb(2,0,36);
+  background: linear-gradient(176deg, rgba(2,0,36,0.9976365546218487) 0%,
+  rgba(16,55,92,1) 41%, rgba(14,111,105,0.938813025210084) 100%);
+  width: 100%;
+  padding: 30px var(--gutter-content);
+
+  color: #fff;
+}
+
+.hero-section h2{
+  color: #fff;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+@media (max-width: 992px){
+  .hero-section
+  {
+    padding: 10px 20px;
+  }
+}

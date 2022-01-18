@@ -1,0 +1,43 @@
+#banner {
+  height: 350px;
+  background: url('https://chromaticsoftwares.com/assets/banner3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#banner .head-line {
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#banner .head-line .overlay
+{
+  display: block;
+  background: rgba(0,0,0 , .5);
+  min-width:350px;
+  max-width: 500px;
+  padding: 20px 0px;
+  margin:0px auto;
+}
+
+#banner .head-line h3{
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 1.9em;
+}
+
+
+#summary ul li
+{
+  margin-bottom: 20px;
+}
+
+.screenshot{
+  margin: 10px;
+}
+.screenshots .screenshot img
+{
+  width: 100%;
+}
